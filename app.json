@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Millwright Calculator Pro",
+    "slug": "millwright-calculator-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "millwrightcalcpro",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brotherspike.millwrightcalcpro",
+      "infoPlist": {
+        "CFBundleDisplayName": "MW Calc Pro",
+        "NSCameraUsageDescription": "Millwright Calculator Pro uses the camera only when you photograph an oil analysis report to view it on screen. The photo is not saved or uploaded.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.brotherspike.millwrightcalcpro",
+      "adaptiveIcon": {
+        "backgroundColor": "#141414",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "Millwright Calculator Pro",
+      "shortName": "MW Calc Pro",
+      "themeColor": "#141414",
+      "backgroundColor": "#F4F4F5"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#141414"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Millwright Calculator Pro uses the camera only when you photograph an oil analysis report to view it on screen. The photo is not saved or uploaded.",
+          "photosPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false,
+      "baseUrl": "/millwright-calculator-pro"
+    }
+  }
+}
